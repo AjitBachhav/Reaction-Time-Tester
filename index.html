@@ -17,10 +17,26 @@
   <div id="shape"></div>
 
 <script>
+  function move(){ 
+       var left;
+       var top;
+       var wh;
+       left = Math.random()*300;
+       right = Math.random() *300;
+       wh = ((Math.random() *400) +100);
+       document.getElementById("shape").style.left = left;
+       document.getElementById("shape").style.top = top;
+       document.getElementById("shape").style.width = wh;
+       document.getElementById("shape").style.height = wh;
+     }
+
+     
   var start= new Date().getTime();
   document.getElemenById("shape").onclick = function(){
     document.getElemenById("shape").style.display="none";
     var end= new Date().getTime();
+    var timeTaken =(end-start)/1000;
+    alert(timeTaken);
   }
   
 
