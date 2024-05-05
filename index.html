@@ -1,1 +1,30 @@
+<html>
+<head>
+     <title>reaction timer</title>
 
+<style>
+     #shape{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  }
+</style>
+
+</head>
+<body>
+  <h1>Reaction tester</h1> 
+  <p>Click on the boxes as soon as you can</p>
+  <div id="shape"></div>
+
+<script>
+  var start= new Date().getTime();
+  document.getElemenById("shape").onclick = function(){
+    document.getElemenById("shape").style.display="none";
+    var end= new Date().getTime();
+  }
+  
+
+</script>
+
+</body>
+</html>
